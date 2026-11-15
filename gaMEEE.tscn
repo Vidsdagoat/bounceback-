@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://b8cjpe0qk0qvm"]
+
+[ext_resource type="Script" uid="uid://8ieui28imuyf" path="res://player_ball.gd" id="1_7i5km"]
+
+[sub_resource type="Sky" id="Sky_y51xg"]
+
+[sub_resource type="Environment" id="Environment_woakw"]
+background_mode = 2
+sky = SubResource("Sky_y51xg")
+
+[node name="Node3D" type="Node3D" unique_id=1972073576]
+transform = Transform3D(-0.50000006, 0, 0.8660254, 0, 1, 0, -0.8660254, 0, -0.50000006, 0, 0, 0)
+script = ExtResource("1_7i5km")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1841736232]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=961881358]
+environment = SubResource("Environment_woakw")
